@@ -1,5 +1,5 @@
 {
-  "name": "node-gyp",
+  "name": "@ingstory/node-gyp",
   "description": "Node.js native addon build tool",
   "license": "MIT",
   "keywords": [
@@ -16,7 +16,7 @@
   "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nodejs/node-gyp.git"
+    "url": "git://github.com/ingstory/node-gyp.git"
   },
   "preferGlobal": true,
   "bin": "./bin/node-gyp.js",
@@ -40,7 +40,7 @@
     "bindings": "^1.5.0",
     "cross-env": "^7.0.3",
     "mocha": "^10.2.0",
-    "nan": "^2.14.2",
+    "@ingstory/nan": "^2.19.1",
     "require-inject": "^1.4.4",
     "standard": "^17.0.0"
   },
