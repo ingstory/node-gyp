@@ -11,7 +11,7 @@
     "bindings",
     "gyp"
   ],
-  "version": "10.1.2",
+  "version": "10.1.3",
   "installVersion": 11,
   "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
   "repository": {
@@ -40,7 +40,7 @@
     "bindings": "^1.5.0",
     "cross-env": "^7.0.3",
     "mocha": "^10.2.0",
-    "@ingstory/nan": "^2.19.3",
+    "@ingstory/nan": "^2.19.4",
     "require-inject": "^1.4.4",
     "standard": "^17.0.0"
   },
