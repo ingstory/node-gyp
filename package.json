@@ -1,6 +1,6 @@
 {
   "name": "@ingstory/node-gyp",
-  "description": "Node.js native addon build tool",
+  "description": "Node.js native addon build tool modified and maintained by INGSTORY",
   "license": "MIT",
   "keywords": [
     "native",
@@ -13,7 +13,7 @@
   ],
   "version": "10.1.3",
   "installVersion": 11,
-  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
+  "author": "INGSTORY <team.dev@ingstory.kr> (https://ingstory.kr)",
   "repository": {
     "type": "git",
     "url": "git://github.com/ingstory/node-gyp.git"

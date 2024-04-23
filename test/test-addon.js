@@ -28,7 +28,17 @@ function runHello (hostProcess = process.execPath) {
 }
 
 function getEncoding () {
-  const code = 'import locale;print(locale.getdefaultlocale()[1])'
+  const code = `
+import sys
+import locale
+
+if sys.version_info[0] == 2:
+    encoding = locale.getdefaultlocale()[1]
+else:
+    encoding = locale.getencoding()
+
+print(encoding)
+`
   return execFileSync('python', ['-c', code])
 }
 
@@ -81,7 +91,7 @@ describe('addon', function () {
     }
     const config = JSON.parse(data.replace(/#.+\n/, ''))
     const nodeDir = config.variables.nodedir
-    const testNodeDir = path.join(addonPath, testDirName)
+    const testNodeDir = path.join(addonPath, testDirName, 'node')
     // Create symbol link to path with non-ascii characters
     try {
       fs.symlinkSync(nodeDir, testNodeDir, 'dir')
